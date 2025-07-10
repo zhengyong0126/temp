@@ -7,7 +7,7 @@ from io import StringIO
 
 st.title("Read CSV from GitHub")
 
-url = "https://raw.githubusercontent.com/evelynyxy/temp/main/data.csv"
+url = "https://raw.githubusercontent.com/zhengyong0126/temp/main/data.csv"
 
 def load_data():
     return pd.read_csv(url)
