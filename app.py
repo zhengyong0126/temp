@@ -12,7 +12,7 @@ if st.button("Upload to GitHub"):
     df = pd.DataFrame([{"a": a, "b": b, "c": c}])
     csv = df.to_csv(index=False)
     content = base64.b64encode(csv.encode()).decode()
-    url = "https://api.github.com/repos/limfw/temp/contents/data2.csv"
+    url = "https://api.github.com/repos/zhengyong0126/temp/contents/data2.csv"
     headers = {"Authorization": f"token {st.secrets['github']['token']}"}
     payload = {
         "message": "Add data.csv",
